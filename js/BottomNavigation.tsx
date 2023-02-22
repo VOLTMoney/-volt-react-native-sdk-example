@@ -1,7 +1,7 @@
 import React from 'react';  
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import App from '../views/App';
+import App from './App';
 import { Image } from 'react-native';
 import MainStackNavigator from './Navigator';
 

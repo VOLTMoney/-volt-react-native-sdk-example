@@ -1,7 +1,7 @@
 import React from "react"
 import { StyleSheet, View } from "react-native"
-import PortfolioCard from "./components/PortfolioCard"
-import Separator from "./components/Separator"
+import PortfolioCard from "./PortfolioCard"
+import Separator from "./Separator"
 
 const PortfolioSummary = () => {
     return (

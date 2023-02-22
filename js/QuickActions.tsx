@@ -1,8 +1,9 @@
 import { useNavigation } from "@react-navigation/native"
 import React from "react"
 import { View } from "react-native"
-import QuickCard from "./components/QuickCard"
-import Separator from "./components/Separator"
+import QuickCard from "./QuickCard"
+import Separator from "./Separator"
+
 
 const QuickActions = () => {
     const navigation =  useNavigation()

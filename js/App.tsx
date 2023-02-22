@@ -5,7 +5,6 @@
  * @format
  */
 
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {
   ScrollView,
@@ -14,13 +13,12 @@ import {
   View,
 } from 'react-native';
 import AssetAllocation from './AssetAllocation';
-
 import Heading from './Heading';
 import PortfolioSummary from './PortfolioSummary';
 import QuickActions from './QuickActions';
-import YellowTitle from './components/YellowTitle';
+import YellowTitle from './YellowTitle';
 
-function App(): JSX.Element {
+function App() {
 return (
   <ScrollView>
   <View style= {styles.container}>

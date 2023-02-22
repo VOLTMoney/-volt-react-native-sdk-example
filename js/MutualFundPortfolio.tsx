@@ -1,11 +1,12 @@
 import { useNavigation } from "@react-navigation/native"
 import React from "react"
-import { Alert, StyleSheet, Text, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import AvailCard from "./AvailCard"
-import MutualFundCard from "./components/MutualFundCard"
-import MutualFundItem from "./components/MutualFundItem"
-import Separator from "./components/Separator"
-import YellowTitle from "./components/YellowTitle"
+import MutualFundCard from "./MutualFundCard"
+import MutualFundItem from "./MutualFundItem"
+import Separator from "./Separator"
+import YellowTitle from "./YellowTitle"
+
 
 const MutualFundPortfolio = () => {
     const navigation = useNavigation();

@@ -1,8 +1,8 @@
 import { useNavigation } from "@react-navigation/native"
 import React from "react"
 import { Image, StyleSheet, Text, View, NativeModules, TouchableOpacity } from "react-native"
-import LoadBenefits from "./components/LoadBenefits"
-import YellowTitle from "./components/YellowTitle"
+import LoadBenefits from "./LoadBenefits"
+import YellowTitle from "./YellowTitle"
 
 const LoanMF = () => {
     const navigation = useNavigation()

@@ -1,8 +1,8 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react"
 import { StyleSheet, View } from "react-native"
-import AssetCard from "./components/AssetCard"
-import Separator from "./components/Separator"
+import AssetCard from "./AssetCard";
+import Separator from "./Separator";
 
 
 function AssetAllocation () {

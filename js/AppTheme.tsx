@@ -1,6 +1,6 @@
 import React from "react"
 import { NativeModules, StyleSheet, Text, TouchableOpacity, View } from "react-native"
-import YellowTitle from "./components/YellowTitle"
+import YellowTitle from "./YellowTitle"
 
 const AppTheme = () => {
     const voltSDK =  NativeModules.VoltSDK

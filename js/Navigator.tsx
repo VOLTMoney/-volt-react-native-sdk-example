@@ -1,9 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import App from "../views/App"
-import AppTheme from "../views/AppTheme"
-import LoanMF from "../views/LoanMF"
-import MutualFundPortfolio from "../views/MutualFundPortfolio"
+import AppTheme from "./AppTheme";
+import LoanMF from "./LoanMF";
+import MutualFundPortfolio from "./MutualFundPortfolio";
+import React from 'react'
+import App from "./App";
+
 
 const Stack = createNativeStackNavigator();
 

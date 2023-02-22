@@ -22,9 +22,11 @@ class VoltSDK (private val context: Context) : VoltAPIResponse, ReactContextBase
     }
 
     @ReactMethod
-    fun initializeVoltApplication() {
+    fun initializeVoltApplication(primaryColor: String, secondaryColor: String) {
         val intent = Intent(context, Volt::class.java)
         intent.putExtra(Constants.INIT_VOLT,true)
+        intent.putExtra(Constants.PRIMARY_COLOR, primaryColor)
+        intent.putExtra(Constants.SECONDARY_COLOR, secondaryColor)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         context.startActivity(intent)
     }

@@ -14,7 +14,7 @@ const LoanMF = () => {
       }
 
     const openVoltSDK = () => {
-        return voltSDK.initializeVoltApplication()
+        return voltSDK.initializeVoltApplication('FF6E31',  'FF6E31')
     }
 
     return(

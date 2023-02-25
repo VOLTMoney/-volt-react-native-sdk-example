@@ -2,6 +2,7 @@ package com.wealthapp
 
 import android.content.Context
 import android.content.Intent
+import com.facebook.react.bridge.Callback
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import com.voltmoney.voltsdk.VoltAPIResponse
@@ -37,8 +38,4 @@ class VoltSDK (private val context: Context) : VoltAPIResponse, ReactContextBase
         intent.putExtra(Constants.START_VOLT,true)
         context.startActivity(intent)
     }
-
-
-
-
-}
+    }

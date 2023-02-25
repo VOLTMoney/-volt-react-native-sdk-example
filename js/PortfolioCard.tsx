@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         lineHeight: 24,
         marginVertical: 8,
-        marginLeft: 24,
+        marginLeft: 20,
     },
     amountText: {
         fontSize: 16,

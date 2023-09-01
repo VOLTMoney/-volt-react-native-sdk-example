@@ -62,3 +62,18 @@ Finally, access the methods inside voltSDK like so, </br>
         return voltSDK.initializeVoltApplication(primaryColor, secondaryColor)
     }
 ```
+## Back Button Navigation from the SDK to App
+<b>Issue</b>: On coming back from the SDK the app returns a white screen without any actions to perform.</br>
+<b>Solution</b>: </br>
+Create a Boolean variable `shouldExecuteOnResume` and set it to false. </br>
+Whenever the app returns from the SDK, the lifecycle method being called on Android is `onResume`. So, we need to perform our operations on this `onResume` lifecycle method. </br>
+```
+  if(shouldExecuteOnResume) {
+            val intent = Intent(this, MainActivity::class.java)
+            this.startActivity(intent)
+        } else{
+            shouldExecuteOnResume = true;
+        }
+   }
+```
+By doing so, it will return to the MainActivity of the app and open the app from the Main screen. 

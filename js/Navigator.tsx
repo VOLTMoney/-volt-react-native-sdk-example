@@ -5,6 +5,7 @@ import LoanMF from "./LoanMF";
 import MutualFundPortfolio from "./MutualFundPortfolio";
 import React from 'react'
 import App from "./App";
+import VoltWebView from "./VoltWebView";
 
 
 const Stack = createNativeStackNavigator();
@@ -21,6 +22,7 @@ function MainStackNavigator() {
         <Stack.Screen name="MutualFund" component={MutualFundPortfolio}
  />
          <Stack.Screen name="LoanMF" component={LoanMF}
+/><Stack.Screen name="VoltWebView" component={VoltWebView}
 />
 <Stack.Screen name="AppTheme" component={AppTheme}
 />

@@ -11,11 +11,11 @@ const QuickActions = () => {
         <View>
 <QuickCard title={'Invest in mutual funds'}/>
 <Separator />
-<QuickCard title={'Invest in stocks'}/>
+<QuickCard title={'Invest in stocks'} onCardClick={() => {navigation.navigate('VoltWebView')}}/>
 <Separator />
 <QuickCard title={'Invest in fixed deposit'}/>
 <Separator />
-<QuickCard title={'Loan against mutual funds & stocks'} onCardClick={() => {navigation.navigate('LoanMF')}} 
+<QuickCard title={'Loan against mutual funds & stocks'} onCardClick={() => {navigation.navigate('LoanMF')}}
 />
 </View>
     )
